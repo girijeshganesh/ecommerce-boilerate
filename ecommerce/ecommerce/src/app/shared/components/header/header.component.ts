@@ -48,4 +48,13 @@ export class HeaderComponent implements OnInit {
   setting() {
     this.router.navigate(['setting'])
   }
+  support() {
+    this.router.navigate(['support'])
+  }
+  terms() {
+    this.router.navigate(['terms'])
+  }
+  login() {
+    this.router.navigate([''])
+  }
 }

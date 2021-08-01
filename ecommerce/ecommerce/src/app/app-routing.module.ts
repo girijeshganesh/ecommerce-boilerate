@@ -50,6 +50,18 @@ const routes: Routes = [
     path: 'setting',
     loadChildren: () => import('./setting/setting.module').then(m => m.SettingModule)
   },
+  {
+    path: 'support',
+    loadChildren: () => import('./support/support.module').then(m => m.SupportModule)
+  },
+  {
+    path: 'terms',
+    loadChildren: () => import('./terms/terms.module').then(m => m.TermsModule)
+  },
+  {
+    path: 'upload',
+    loadChildren: () => import('./upload/upload.module').then(m => m.UploadModule)
+  }
 ];
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
