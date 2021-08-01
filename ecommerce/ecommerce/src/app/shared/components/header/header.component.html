@@ -2,27 +2,27 @@
     <header id="header" class="animate__animated animate__fadeInDown wow" data-wow-duration=".5s">
         <nav class="navbar align-items-center" style="flex-wrap: unset;">
             <div class="nav-item  ml-lg-2 ml-xl-0 logo" style="min-width: fit-content;">
-                <a class="navbar-brand nav-link px-0" href="dashboard.html">
+                <a class="navbar-brand nav-link px-0" href="javascript:void(0)" (click)="backToDashboard()">
                     <img src="assets/images/logo.png" class="img-fluid">
                 </a>
             </div>
 
             <div class="nav-inner ml-5 pl-4 w-100">
                 <ul class="navbar-nav d-flex align-items-center w-100">
-                    <li class="nav-item show-only-large-devices active">
-                        <a class="nav-link" href="home.html"><i class="zmdi zmdi-assignment"></i>POS</a>
+                    <li class="nav-item show-only-large-devices">
+                        <a class="nav-link" href="javascript:void(0)" (click)="backToHome()"><i class="zmdi zmdi-assignment"></i>POS</a>
                     </li>
                     <li class="nav-item show-only-large-devices">
-                        <a class="nav-link" href="transactions.html"><i class="zmdi zmdi-collection-text"></i>Transaction</a>
+                        <a class="nav-link" href="javascript:void(0)" (click)="transaction()"><i class="zmdi zmdi-collection-text"></i>Transaction</a>
                     </li>
                     <li class="nav-item show-only-large-devices">
-                        <a class="nav-link" href="booking.html"><i class="zmdi zmdi-airline-seat-recline-extra"></i> Booking</a>
+                        <a class="nav-link" href="javascript:void(0)" (click)="booking()"><i class="zmdi zmdi-airline-seat-recline-extra"></i> Booking</a>
                     </li>
                     <li class="nav-item show-only-large-devices">
-                        <a class="nav-link" href="orders_status.html"><i class="zmdi zmdi-hourglass-alt"></i> Orders Status</a>
+                        <a class="nav-link" href="javascript:void(0)" (click)="orderStatus()"><i class="zmdi zmdi-hourglass-alt"></i> Orders Status</a>
                     </li>
 
-                    <li class="nav-item profile_img ml-auto" type="button" id="menu">
+                    <li class="nav-item profile_img ml-auto" type="button" id="menu" (click)="menu()">
                         <div class="dropdown">
                             <span>
                                 <i class="zmdi zmdi-menu"></i>
