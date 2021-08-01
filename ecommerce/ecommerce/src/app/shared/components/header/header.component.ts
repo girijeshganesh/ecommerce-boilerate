@@ -30,4 +30,22 @@ export class HeaderComponent implements OnInit {
   menu() {
     $("#header").toggleClass("active");
   }
+  people() {
+    this.router.navigate(['people'])
+  }
+  wallet() {
+    this.router.navigate(['wallet'])
+  }
+  items() {
+    this.router.navigate(['items'])
+  }
+  reviews() {
+    this.router.navigate(['reviews'])
+  }
+  authentication() {
+    this.router.navigate(['authentication'])
+  }
+  setting() {
+    this.router.navigate(['setting'])
+  }
 }
