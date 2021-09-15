@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <body id="page_home">
     <app-header></app-header>
     <!-- Body Wrapper Start -->
@@ -17,10 +18,12 @@
                     <div class="btn_box">
                         <div class="row">
                             <div class="col-6 col-sm-6 col-md-6 px-1 px-md-2">
-                                <button type="button" class="btn  Add_order" id="add_order" (click)="addOrder()"><a href="javascript:void(0)">Add Order</a></button>
+                                <button type="button" class="btn  Add_order" id="add_order" (click)="addOrder()"><a
+                                        href="javascript:void(0)">Add Order</a></button>
                             </div>
                             <div class="col-6 col-sm-6 col-md-6  px-1 px-md-2">
-                                <button type="button" class="btn order-status"><a href="orders_status.html">Order Status</a></button>
+                                <button type="button" class="btn order-status"><a routerLink="../order-status">Order
+                                        Status</a></button>
                             </div>
                         </div>
                     </div>
@@ -153,8 +156,10 @@
 
                         <div class="btn_box">
                             <div class="row no-gutter mx-0">
-                                <button type="button" class="btn col-6 Cancel" id="cancel_order" (click)="cancelOrder()"><a href="javascript:void(0)">Cancel</a></button>
-                                <button type="button" class="btn col-6 place_order" id="place-order" (click)="placeOrder()"><a href="javascript:void(0)">Place Order</a></button>
+                                <button type="button" class="btn col-6 Cancel" id="cancel_order"
+                                    (click)="cancelOrder()"><a href="javascript:void(0)">Cancel</a></button>
+                                <button type="button" class="btn col-6 place_order" id="place-order"
+                                    (click)="placeOrder()"><a href="javascript:void(0)">Place Order</a></button>
                             </div>
                         </div>
                     </div>
@@ -171,14 +176,17 @@
                             <div class="row no-gutters align-items-center">
                                 <div class="col-6 col-sm-6 col-md-6 col-lg-4">
                                     <div class="custom-control custom-radio">
-                                        <input checked type="radio" id="cash" name="PaymentMethod" class="custom-control-input">
-                                        <label class="custom-control-label" for="cash"><span class="ml-2">Cash</span></label>
+                                        <input checked type="radio" id="cash" name="PaymentMethod"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="cash"><span
+                                                class="ml-2">Cash</span></label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-sm-6 col-md-6 col-lg-4">
                                     <div class="custom-control custom-radio">
                                         <input type="radio" id="card" name="PaymentMethod" class="custom-control-input">
-                                        <label class="custom-control-label" for="card"><span class="ml-2">Card</span></label>
+                                        <label class="custom-control-label" for="card"><span
+                                                class="ml-2">Card</span></label>
                                     </div>
                                 </div>
                             </div>
@@ -190,14 +198,17 @@
                             <div class="row no-gutters align-items-center">
                                 <div class="col-6 col-sm-6 col-md-6 col-lg-4">
                                     <div class="custom-control custom-radio">
-                                        <input checked type="radio" id="takeaway" name="OrderType" class="custom-control-input">
-                                        <label class="custom-control-label" for="takeaway"><span class="ml-2">Takeaway</span></label>
+                                        <input checked type="radio" id="takeaway" name="OrderType"
+                                            class="custom-control-input">
+                                        <label class="custom-control-label" for="takeaway"><span
+                                                class="ml-2">Takeaway</span></label>
                                     </div>
                                 </div>
                                 <div class="col-6 col-sm-6 col-md-6 col-lg-4">
                                     <div class="custom-control custom-radio">
                                         <input type="radio" id="dine-in" name="OrderType" class="custom-control-input">
-                                        <label class="custom-control-label" for="dine-in"><span class="ml-2">Dine-in</span></label>
+                                        <label class="custom-control-label" for="dine-in"><span
+                                                class="ml-2">Dine-in</span></label>
                                     </div>
                                 </div>
 
@@ -233,8 +244,10 @@
                     <div class="order_footer bg-white">
                         <div class="btn_box">
                             <div class="row no-gutter mx-0">
-                                <button type="button" class="btn col-6 Cancel" id="edit_order" (click)="editorder()"><a href="javascript:void(0)">Cancel</a></button>
-                                <button type="button" class="btn col-6 place_order" id="submit"><a href="#">Submit</a></button>
+                                <button type="button" class="btn col-6 Cancel" id="edit_order" (click)="editorder()"><a
+                                        href="javascript:void(0)">Cancel</a></button>
+                                <button type="button" class="btn col-6 place_order" id="submit"><a
+                                        href="#">Submit</a></button>
                             </div>
                         </div>
                     </div>
@@ -243,139 +256,156 @@
             </div>
         </div>
         <!-- Order Section End -->
-
         <!-- Food Item Section Start -->
         <div class="item_section mt-4 mt-md-0">
             <div class="item_section_header">
-                <div class="tab_btn_container">
-                    <div class="nav nav-tabs owl-carousel">
-                        <div class="tab nav-item active animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_fastfood.png">
-                                <h5>Fast Food</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_Seafood.png">
-                                <h5>Sea Food</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_chinese.png">
-                                <h5>Chinese</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_dessert.png">
-                                <h5>Dessert</h5>
-                            </a>
-                        </div>
-
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_fastfood.png">
-                                <h5>Fast Food</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_Seafood.png">
-                                <h5>Sea Food</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_chinese.png">
-                                <h5>Chinese</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_dessert.png">
-                                <h5>Dessert</h5>
-                            </a>
-                        </div>
-
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_fastfood.png">
-                                <h5>Fast Food</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_Seafood.png">
-                                <h5>Sea Food</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_chinese.png">
-                                <h5>Chinese</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_dessert.png">
-                                <h5>Dessert</h5>
-                            </a>
-                        </div>
-
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_fastfood.png">
-                                <h5>Fast Food</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_Seafood.png">
-                                <h5>Sea Food</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_chinese.png">
-                                <h5>Chinese</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_dessert.png">
-                                <h5>Dessert</h5>
-                            </a>
-                        </div>
-
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_fastfood.png">
-                                <h5>Fast Food</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_Seafood.png">
-                                <h5>Sea Food</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_chinese.png">
-                                <h5>Chinese</h5>
-                            </a>
-                        </div>
-                        <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
-                            <a class="nav-link">
-                                <img src="assets/images/ic_dessert.png">
-                                <h5>Dessert</h5>
-                            </a>
+                <carousel [arrows]="false"  [cellWidth]="150" [height]="100">
+                    <div class="carousel-cell">
+                        <div class="tab_btn_container">
+                            <div class="nav nav-tabs owl-carousel">
+                                <div class="tab nav-item active animate__animated animate__zoomIn wow"
+                                    data-wow-duration=".5s" role="presentation">
+                                    <a class="nav-link">
+                                        <img src="assets/images/ic_fastfood.png">
+                                        <h5>Fast Food</h5>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-
+                    <div class="carousel-cell">
+                        <div class="tab_btn_container">
+                            <div class="nav nav-tabs owl-carousel">
+                                <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
+                                    <a class="nav-link">
+                                        <img src="assets/images/ic_Seafood.png">
+                                        <h5>Sea Food</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="tab_btn_container">
+                            <div class="nav nav-tabs owl-carousel">
+                                <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
+                                    <a class="nav-link">
+                                        <img src="assets/images/ic_chinese.png">
+                                        <h5>Chinese</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="tab_btn_container">
+                            <div class="nav nav-tabs owl-carousel">
+                                <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
+                                    <a class="nav-link">
+                                        <img src="assets/images/ic_dessert.png">
+                                        <h5>Dessert</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="tab_btn_container">
+                            <div class="nav nav-tabs owl-carousel">
+                                <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
+                                    <a class="nav-link">
+                                        <img src="assets/images/ic_fastfood.png">
+                                        <h5>Fast Food</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="tab_btn_container">
+                            <div class="nav nav-tabs owl-carousel">
+                                <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
+                                    <a class="nav-link">
+                                        <img src="assets/images/ic_chinese.png">
+                                        <h5>Chinese</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="tab_btn_container">
+                            <div class="nav nav-tabs owl-carousel">
+                                <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
+                                    <a class="nav-link">
+                                        <img src="assets/images/ic_fastfood.png">
+                                        <h5>Fast Food</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="tab_btn_container">
+                            <div class="nav nav-tabs owl-carousel">
+                                <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
+                                    <a class="nav-link">
+                                        <img src="assets/images/ic_Seafood.png">
+                                        <h5>Sea Food</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="tab_btn_container">
+                            <div class="nav nav-tabs owl-carousel">
+                                <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
+                                    <a class="nav-link">
+                                        <img src="assets/images/ic_chinese.png">
+                                        <h5>Chinese</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="tab_btn_container">
+                            <div class="nav nav-tabs owl-carousel">
+                                <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
+                                    <a class="nav-link">
+                                        <img src="assets/images/ic_fastfood.png">
+                                        <h5>Fast Food</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="tab_btn_container">
+                            <div class="nav nav-tabs owl-carousel">
+                                <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
+                                    <a class="nav-link">
+                                        <img src="assets/images/ic_Seafood.png">
+                                        <h5>Sea Food</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-cell">
+                        <div class="tab_btn_container">
+                            <div class="nav nav-tabs owl-carousel">
+                                <div class="tab nav-item animate__animated animate__zoomIn wow" data-wow-duration=".5s" role="presentation">
+                                    <a class="nav-link">
+                                        <img src="assets/images/ic_chinese.png">
+                                        <h5>Chinese</h5>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </carousel>
                 <form class="search_box animate__animated animate__zoomIn wow">
                     <div class="form-group d-flex">
                         <div class="input-group-prepend">
@@ -959,4 +989,5 @@
     <!-- Body Wrapper End -->
 
 </body>
+
 </html>
