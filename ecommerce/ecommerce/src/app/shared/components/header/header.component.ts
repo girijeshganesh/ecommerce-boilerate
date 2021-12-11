@@ -39,6 +39,9 @@ export class HeaderComponent implements OnInit {
   items() {
     this.router.navigate(['items'])
   }
+  setup() {
+    this.router.navigate(['setup'])
+  }
   reviews() {
     this.router.navigate(['reviews'])
   }
