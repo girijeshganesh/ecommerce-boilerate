@@ -61,6 +61,10 @@ const routes: Routes = [
   {
     path: 'upload',
     loadChildren: () => import('./upload/upload.module').then(m => m.UploadModule)
+  },
+  {
+    path: 'setup',
+    loadChildren: () => import('./setup/setup.module').then(m => m.SetupModule)
   }
 ];
 @NgModule({
