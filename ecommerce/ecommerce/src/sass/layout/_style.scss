@@ -3707,7 +3707,12 @@ iframe {
 #page_reviews .page_title h1 span i {
     color: var(--primary);
 }
-
+.cursor-pointer {
+    cursor: pointer;
+}
+.tag-hvr-scn:hover {
+    background: #fbaf03;
+}
 .card-inner-scn {
     padding: 20px;
     height: 120px;
@@ -3715,4 +3720,20 @@ i {
     font-size: 30px;
     padding-bottom: 10px;
 }
+}
+.head-tag {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 15px;
+    h2 {
+        flex-grow: 1;
+        color: #fbaf03;
+    }
+    h4 {
+        color: #ccc;
+    }
+}
+.btn-setup-sucess {
+    background: #75ca75;
+    color: #fff;
+    border: 1px solid #75ca75;
 }
