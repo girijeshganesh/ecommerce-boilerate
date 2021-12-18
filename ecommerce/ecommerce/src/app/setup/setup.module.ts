@@ -12,6 +12,7 @@ import { TaxRatesComponent } from './tax-rates/tax-rates.component';
 import { InnerMenuComponent } from './inner-menu/inner-menu.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { SimpleModalModule } from 'ngx-simple-modal';
+import { LocationStaffComponent } from './location-staff/location-staff.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { SimpleModalModule } from 'ngx-simple-modal';
     MenuManagementComponent,
     SurchargesDiscountsComponent,
     TaxRatesComponent,
-    InnerMenuComponent
+    InnerMenuComponent,
+    LocationStaffComponent
   ],
   imports: [
     CommonModule,

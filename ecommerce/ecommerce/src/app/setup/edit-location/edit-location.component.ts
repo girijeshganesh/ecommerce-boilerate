@@ -21,4 +21,7 @@ export class EditLocationComponent implements OnInit {
   menu() {
     this.router.navigate(['setup/location/menuManagement'])
   }
+  staff() {
+    this.router.navigate(['setup/location/staff'])
+  }
 }

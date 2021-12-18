@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { EditLocationComponent } from './edit-location/edit-location.component';
 import { GeneralDetailsComponent } from './general-details/general-details.component';
 import { InnerMenuComponent } from './inner-menu/inner-menu.component';
+import { LocationStaffComponent } from './location-staff/location-staff.component';
 import { LocationComponent } from './location/location.component';
 import { MenuManagementComponent } from './menu-management/menu-management.component';
 import { SetupComponent } from './setup.component';
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'location/menuManagement/taxRates',
     component:TaxRatesComponent
+  },
+  {
+    path: 'location/staff',
+    component:LocationStaffComponent
   },
 ];
 
