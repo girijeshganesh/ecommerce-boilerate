@@ -35,8 +35,7 @@
             ],
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
-              "src/styles.scss",
-              "../node_modules/ngx-simple-modal/styles/simple-modal.css"
+              "src/styles.scss"
             ],
             "scripts": []
           },
