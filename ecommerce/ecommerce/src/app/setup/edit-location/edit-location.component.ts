@@ -15,4 +15,7 @@ export class EditLocationComponent implements OnInit {
   location() {
     this.router.navigate(['setup/location'])
   }
+  generalDetails() {
+    this.router.navigate(['setup/generalDetails'])
+  }
 }

@@ -5,6 +5,7 @@ import { SetupRoutingModule } from './setup-routing.module';
 import { SharedModule } from '../shared/shared.module';
 import { LocationComponent } from './location/location.component';
 import { EditLocationComponent } from './edit-location/edit-location.component';
+import { GeneralDetailsComponent } from './general-details/general-details.component';
 
 
 
@@ -12,7 +13,8 @@ import { EditLocationComponent } from './edit-location/edit-location.component';
   declarations: [
     SetupComponent,
     LocationComponent,
-    EditLocationComponent
+    EditLocationComponent,
+    GeneralDetailsComponent
   ],
   imports: [
     CommonModule,

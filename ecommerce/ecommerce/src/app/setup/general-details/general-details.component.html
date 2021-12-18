@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+
+<body id="page_setup">
+    <!-- Header Start -->
+    <app-header></app-header>
+    <!-- Header End -->
+
+    <!-- Body Wrapper Start -->
+    <div class="body_wrapper container-fluid">
+        <div class="row pt-4 px-2">
+            <div class="col-12">
+                <div class="d-flex align-items-center head-tag cursor-pointer" (click)="editLocation()">
+                    <h4> <i class="icon-arrow-left"></i> Edit</h4>
+                </div>
+            </div>
+            <div class="row ml-2 w-100">
+                <div class="col-12 col-sm-4">
+                    <input type="text" placeholder="Name" class="form-control" />
+                    <input type="text" placeholder="Address" class="form-control" />
+                    <input type="text" placeholder="Address 2" class="form-control" />
+                    <input type="text" placeholder="City" class="form-control" />
+                    <input type="text" placeholder="Country" class="form-control" />
+                    <input type="text" placeholder="Time Zone" class="form-control" />
+                    <input type="text" placeholder="Currency" class="form-control" />
+                    <input type="number" placeholder="Telephone" class="form-control" />
+                    <button class="btn-setup-sucess"><i class="icon-check mr-1"></i>Update</button>
+                </div>
+                <div class="col-12 col-sm-8">
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
