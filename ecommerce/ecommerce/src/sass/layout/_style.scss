@@ -3730,6 +3730,17 @@ i {
     }
     h4 {
         color: #ccc;
+        font-size: 21px;
+    }
+}
+.head-tag-light {
+    border-bottom: none;
+    h2 {
+        flex-grow: 1;
+        color: #4e4e4e;
+        font-weight: 400;
+        font-size: 18px;
+        margin: 0;
     }
 }
 .btn-setup-sucess {
@@ -3738,6 +3749,20 @@ i {
     border: 1px solid #75ca75;
     padding: 5px 10px;
 }
+.btn-setup-danger {
+    background: #f35b55;
+    color: #fff;
+    border: 1px solid #f35b55;
+    padding: 5px 10px;
+}
 .form-control {
     margin-bottom: 15px;
+}
+select.form-control {
+    color: #495057 !important;
+    border: 1px solid #ced4da !important;
+    font-weight: 400 !important;
+}
+.fl-basis-100 {
+    flex-basis: 100%;
 }

@@ -6,7 +6,12 @@ import { SharedModule } from '../shared/shared.module';
 import { LocationComponent } from './location/location.component';
 import { EditLocationComponent } from './edit-location/edit-location.component';
 import { GeneralDetailsComponent } from './general-details/general-details.component';
-
+import { MenuManagementComponent } from './menu-management/menu-management.component';
+import { SurchargesDiscountsComponent } from './surcharges-discounts/surcharges-discounts.component';
+import { TaxRatesComponent } from './tax-rates/tax-rates.component';
+import { InnerMenuComponent } from './inner-menu/inner-menu.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import { SimpleModalModule } from 'ngx-simple-modal';
 
 
 @NgModule({
@@ -14,12 +19,18 @@ import { GeneralDetailsComponent } from './general-details/general-details.compo
     SetupComponent,
     LocationComponent,
     EditLocationComponent,
-    GeneralDetailsComponent
+    GeneralDetailsComponent,
+    MenuManagementComponent,
+    SurchargesDiscountsComponent,
+    TaxRatesComponent,
+    InnerMenuComponent
   ],
   imports: [
     CommonModule,
     SetupRoutingModule,
-    SharedModule
+    SharedModule,
+    MatTabsModule,
+    SimpleModalModule
   ]
 })
 export class SetupModule { }

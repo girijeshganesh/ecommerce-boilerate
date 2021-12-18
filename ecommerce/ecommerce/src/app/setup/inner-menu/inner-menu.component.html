@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+
+<body id="page_setup">
+    <!-- Header Start -->
+    <app-header></app-header>
+    <!-- Header End -->
+
+    <!-- Body Wrapper Start -->
+    <div class="body_wrapper container-fluid">
+        <div class="row pt-4 px-2">
+            <div class="col-12">
+                <div class="d-flex align-items-center head-tag cursor-pointer" (click)="back()">
+                    <h4> <i class="icon-arrow-left"></i>Menu</h4>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="d-flex align-items-center head-tag head-tag-light mt-2">
+                    <h2 class="fl-basis-100">Menu for IFA</h2>
+                    <input type="text" class="form-control w-50" placeholder="Search Dish"/>
+                </div>
+            </div>
+        </div>
+        <div class="px-2">
+            <mat-tab-group>
+                <mat-tab label="Burgers">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="w-50">Item Name</th>
+                                <th scope="col">Branch Price</th>
+                                <th scope="col">Tax Rate</th>
+                                <th scope="col">Tax</th>
+                                <th scope="col">POS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w-50">Cheese Burger</td>
+                                <td><input type="text" class="form-control" placeholder="price" /></td>
+                                <td><select class="form-control" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select></td>
+                                  <td><input type="text" class="form-control" placeholder="tax" /></td>
+                                <td><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    </label>
+                                  </div></td>
+                            </tr>
+                            <tr>
+                                <td class="w-50">Cheese Burger</td>
+                                <td><input type="text" class="form-control" placeholder="price" /></td>
+                                <td><select class="form-control" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select></td>
+                                  <td><input type="text" class="form-control" placeholder="tax" /></td>
+                                <td><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    </label>
+                                  </div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </mat-tab>
+                <mat-tab label="Order Discounts">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="w-50">Item Name</th>
+                                <th scope="col">Branch Price</th>
+                                <th scope="col">Tax Rate</th>
+                                <th scope="col">Tax</th>
+                                <th scope="col">POS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w-50">Cheese Burger</td>
+                                <td><input type="text" class="form-control" placeholder="price" /></td>
+                                <td><select class="form-control" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select></td>
+                                  <td><input type="text" class="form-control" placeholder="tax" /></td>
+                                <td><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    </label>
+                                  </div></td>
+                            </tr>
+                            <tr>
+                                <td class="w-50">Cheese Burger</td>
+                                <td><input type="text" class="form-control" placeholder="price" /></td>
+                                <td><select class="form-control" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select></td>
+                                  <td><input type="text" class="form-control" placeholder="tax" /></td>
+                                <td><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    </label>
+                                  </div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </mat-tab>
+                <mat-tab label="Item Discounts">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="w-50">Item Name</th>
+                                <th scope="col">Branch Price</th>
+                                <th scope="col">Tax Rate</th>
+                                <th scope="col">Tax</th>
+                                <th scope="col">POS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w-50">Cheese Burger</td>
+                                <td><input type="text" class="form-control" placeholder="price" /></td>
+                                <td><select class="form-control" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select></td>
+                                  <td><input type="text" class="form-control" placeholder="tax" /></td>
+                                <td><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    </label>
+                                  </div></td>
+                            </tr>
+                            <tr>
+                                <td class="w-50">Cheese Burger</td>
+                                <td><input type="text" class="form-control" placeholder="price" /></td>
+                                <td><select class="form-control" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select></td>
+                                  <td><input type="text" class="form-control" placeholder="tax" /></td>
+                                <td><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    </label>
+                                  </div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </mat-tab>
+                <mat-tab label="Item Discounts">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="w-50">Item Name</th>
+                                <th scope="col">Branch Price</th>
+                                <th scope="col">Tax Rate</th>
+                                <th scope="col">Tax</th>
+                                <th scope="col">POS</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w-50">Cheese Burger</td>
+                                <td><input type="text" class="form-control" placeholder="price" /></td>
+                                <td><select class="form-control" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select></td>
+                                  <td><input type="text" class="form-control" placeholder="tax" /></td>
+                                <td><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    </label>
+                                  </div></td>
+                            </tr>
+                            <tr>
+                                <td class="w-50">Cheese Burger</td>
+                                <td><input type="text" class="form-control" placeholder="price" /></td>
+                                <td><select class="form-control" aria-label="Default select example">
+                                    <option selected>Open this select menu</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                  </select></td>
+                                  <td><input type="text" class="form-control" placeholder="tax" /></td>
+                                <td><div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                    </label>
+                                  </div></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
+
+</body>
+
+</html>

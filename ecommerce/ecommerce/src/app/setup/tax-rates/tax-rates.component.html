@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+
+<body id="page_setup">
+    <!-- Header Start -->
+    <app-header></app-header>
+    <!-- Header End -->
+
+    <!-- Body Wrapper Start -->
+    <div class="body_wrapper container-fluid">
+        <div class="row pt-4 px-2">
+            <div class="col-12">
+                <div class="d-flex align-items-center head-tag cursor-pointer" (click)="back()">
+                    <h4> <i class="icon-arrow-left"></i> Tax Rates</h4>
+                </div>
+            </div>
+        </div>
+        <div class="px-2">
+            <div class="col-12">
+                <div class="d-flex align-items-center head-tag head-tag-light mt-2">
+                    <h2>Tax Rate</h2>
+                    <button class="btn-setup-sucess"><i class="icon-plus mr-1"></i>Add Tax</button>
+                </div>
+                </div>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Name</th>
+                            <th scope="col">Rate</th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sample</td>
+                            <td>Sample</td>
+                            <td><button class="btn-setup-sucess mr-2"><i class="icon-edit mr-1"></i>Edit</button>
+                           <button class="btn-setup-danger"><i class="icon-trash mr-1"></i>Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Sample</td>
+                            <td>Sample</td>
+                            <td><button class="btn-setup-sucess mr-2"><i class="icon-edit mr-1"></i>Edit</button>
+                           <button class="btn-setup-danger"><i class="icon-trash mr-1"></i>Delete</button></td>
+                        </tr>
+                        <tr>
+                            <td>Sample</td>
+                            <td>Sample</td>
+                            <td><button class="btn-setup-sucess mr-2"><i class="icon-edit mr-1"></i>Edit</button>
+                           <button class="btn-setup-danger"><i class="icon-trash mr-1"></i>Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+        </div>
+    </div>
+    
+</body>
+
+</html>
