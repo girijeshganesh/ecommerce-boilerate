@@ -17,6 +17,7 @@ import { DiningComponent } from './dining/dining.component';
 import { PrintersComponent } from './printers/printers.component';
 import { DeliverySettingsComponent } from './delivery-settings/delivery-settings.component';
 import { SelfOrderingComponent } from './self-ordering/self-ordering.component';
+import { StaffComponent } from './staff/staff.component';
 
 
 @NgModule({
@@ -33,7 +34,8 @@ import { SelfOrderingComponent } from './self-ordering/self-ordering.component';
     DiningComponent,
     PrintersComponent,
     DeliverySettingsComponent,
-    SelfOrderingComponent
+    SelfOrderingComponent,
+    StaffComponent
   ],
   imports: [
     CommonModule,

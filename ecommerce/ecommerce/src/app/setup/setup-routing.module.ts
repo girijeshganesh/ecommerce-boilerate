@@ -11,6 +11,7 @@ import { MenuManagementComponent } from './menu-management/menu-management.compo
 import { PrintersComponent } from './printers/printers.component';
 import { SelfOrderingComponent } from './self-ordering/self-ordering.component';
 import { SetupComponent } from './setup.component';
+import { StaffComponent } from './staff/staff.component';
 import { SurchargesDiscountsComponent } from './surcharges-discounts/surcharges-discounts.component';
 import { TaxRatesComponent } from './tax-rates/tax-rates.component';
 
@@ -26,6 +27,10 @@ const routes: Routes = [
   {
     path: 'editLocation',
     component:EditLocationComponent
+  },
+  {
+    path: 'staff',
+    component:StaffComponent
   },
   {
     path: 'location/generalDetails',

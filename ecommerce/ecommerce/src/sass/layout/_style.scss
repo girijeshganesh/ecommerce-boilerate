@@ -3770,3 +3770,10 @@ select.form-control {
     position: relative;
     bottom: 8px;
 }
+.btn-wrp-equal {
+    button {
+        width: 100px;
+        margin-bottom: 10px;
+        display: block;
+    }
+}
