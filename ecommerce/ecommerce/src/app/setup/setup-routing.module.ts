@@ -1,11 +1,15 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DeliverySettingsComponent } from './delivery-settings/delivery-settings.component';
+import { DiningComponent } from './dining/dining.component';
 import { EditLocationComponent } from './edit-location/edit-location.component';
 import { GeneralDetailsComponent } from './general-details/general-details.component';
 import { InnerMenuComponent } from './inner-menu/inner-menu.component';
 import { LocationStaffComponent } from './location-staff/location-staff.component';
 import { LocationComponent } from './location/location.component';
 import { MenuManagementComponent } from './menu-management/menu-management.component';
+import { PrintersComponent } from './printers/printers.component';
+import { SelfOrderingComponent } from './self-ordering/self-ordering.component';
 import { SetupComponent } from './setup.component';
 import { SurchargesDiscountsComponent } from './surcharges-discounts/surcharges-discounts.component';
 import { TaxRatesComponent } from './tax-rates/tax-rates.component';
@@ -46,6 +50,22 @@ const routes: Routes = [
   {
     path: 'location/staff',
     component:LocationStaffComponent
+  },
+  {
+    path: 'location/dining',
+    component:DiningComponent
+  },
+  {
+    path: 'location/selfOrdering',
+    component:SelfOrderingComponent
+  },
+  {
+    path: 'location/printers',
+    component:PrintersComponent
+  },
+  {
+    path: 'location/delivery',
+    component:DeliverySettingsComponent
   },
 ];
 

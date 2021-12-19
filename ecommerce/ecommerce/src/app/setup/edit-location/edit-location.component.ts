@@ -24,4 +24,16 @@ export class EditLocationComponent implements OnInit {
   staff() {
     this.router.navigate(['setup/location/staff'])
   }
+  dining() {
+    this.router.navigate(['setup/location/dining'])
+  }
+  print() {
+    this.router.navigate(['setup/location/printers'])
+  }
+  delivery() {
+    this.router.navigate(['setup/location/delivery'])
+  }
+  selfOrder() {
+    this.router.navigate(['setup/location/selfOrdering'])
+  }
 }

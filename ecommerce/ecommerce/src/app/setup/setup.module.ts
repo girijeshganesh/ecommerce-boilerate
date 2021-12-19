@@ -13,6 +13,10 @@ import { InnerMenuComponent } from './inner-menu/inner-menu.component';
 import {MatTabsModule} from '@angular/material/tabs';
 import { SimpleModalModule } from 'ngx-simple-modal';
 import { LocationStaffComponent } from './location-staff/location-staff.component';
+import { DiningComponent } from './dining/dining.component';
+import { PrintersComponent } from './printers/printers.component';
+import { DeliverySettingsComponent } from './delivery-settings/delivery-settings.component';
+import { SelfOrderingComponent } from './self-ordering/self-ordering.component';
 
 
 @NgModule({
@@ -25,7 +29,11 @@ import { LocationStaffComponent } from './location-staff/location-staff.componen
     SurchargesDiscountsComponent,
     TaxRatesComponent,
     InnerMenuComponent,
-    LocationStaffComponent
+    LocationStaffComponent,
+    DiningComponent,
+    PrintersComponent,
+    DeliverySettingsComponent,
+    SelfOrderingComponent
   ],
   imports: [
     CommonModule,

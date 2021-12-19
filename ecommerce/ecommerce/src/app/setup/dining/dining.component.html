@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+
+<body id="page_setup">
+    <!-- Header Start -->
+    <app-header></app-header>
+    <!-- Header End -->
+
+    <!-- Body Wrapper Start -->
+    <div class="body_wrapper container-fluid">
+        <div class="row pt-4 px-2">
+            <div class="col-12">
+                <div class="d-flex align-items-center head-tag cursor-pointer" (click)="back()">
+                    <h4> <i class="icon-arrow-left mr-1"></i>Dining</h4>
+                </div>
+            </div>
+        </div>
+        <div class="px-2">
+            <mat-tab-group>
+                <mat-tab label="Party Table">
+                    <h3>Tables new kitchen</h3>
+                    <p>Table Name</p>
+                    <div class="row m-0">
+                        <div class="col-12 col-sm-3">
+                            <div class="d-flex align-items-center ">
+                                <input type="number" class="form-control" placeholder="1" />
+                                <button class="btn-setup-danger cust-pos-btn"><i class="icon-remove"></i></button>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-3"> <button class="btn-setup-danger">Remove Table<i
+                                    class="icon-remove ml-1"></i></button></div>
+                        <div class="col-12 col-sm-3">
+                            <button class="btn-setup-sucess mr-2">Add Table<i
+                                class="icon-plus ml-1"></i></button>
+                                <button class="btn-setup-sucess">Save Table<i
+                                    class="icon-print ml-1"></i></button>
+                        </div>
+                    </div>
+                </mat-tab>
+                <mat-tab label="Family Table">
+                    <h3>Tables new kitchen</h3>
+                    <p>Table Name</p>
+                    <div class="row m-0">
+                        <div class="col-12 col-sm-3">
+                            <div class="d-flex align-items-center ">
+                                <input type="number" class="form-control" placeholder="1" />
+                                <button class="btn-setup-danger cust-pos-btn"><i class="icon-remove"></i></button>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-sm-3"> <button class="btn-setup-danger">Remove Table<i
+                                    class="icon-remove ml-1"></i></button></div>
+                        <div class="col-12 col-sm-3">
+                            <button class="btn-setup-sucess mr-2">Add Table<i
+                                class="icon-plus ml-1"></i></button>
+                                <button class="btn-setup-sucess">Save Table<i
+                                    class="icon-print ml-1"></i></button>
+                        </div>
+                    </div>
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
+
+</body>
+
+</html>
