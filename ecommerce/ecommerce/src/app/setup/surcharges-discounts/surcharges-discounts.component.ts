@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { AddItemDiscountComponent } from '../add-item-discount/add-item-discount.component';
+import { AddOrderDiscountComponent } from '../add-order-discount/add-order-discount.component';
 import { AddSurchargeComponent } from '../add-surcharge/add-surcharge.component';
 
 @Component({
@@ -14,9 +16,25 @@ export class SurchargesDiscountsComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  openDialog(): void {
+  addSurcharge(): void {
     const dialogRef = this.dialog.open(AddSurchargeComponent, {
-      width: '250px',
+      width: '500px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+    });
+  }
+  addOrderDiscount(): void {
+    const dialogRef = this.dialog.open(AddOrderDiscountComponent, {
+      width: '500px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+    });
+  }
+  addItemDiscount(): void {
+    const dialogRef = this.dialog.open(AddItemDiscountComponent, {
+      width: '500px',
     });
 
     dialogRef.afterClosed().subscribe(result => {

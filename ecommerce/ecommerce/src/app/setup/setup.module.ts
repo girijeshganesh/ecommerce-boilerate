@@ -21,6 +21,8 @@ import { StaffComponent } from './staff/staff.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { AddSurchargeComponent } from './add-surcharge/add-surcharge.component';
 import { AddLocationComponent } from './add-location/add-location.component';
+import { AddOrderDiscountComponent } from './add-order-discount/add-order-discount.component';
+import { AddItemDiscountComponent } from './add-item-discount/add-item-discount.component';
 
 @NgModule({
   declarations: [
@@ -39,7 +41,9 @@ import { AddLocationComponent } from './add-location/add-location.component';
     SelfOrderingComponent,
     StaffComponent,
     AddSurchargeComponent,
-    AddLocationComponent
+    AddLocationComponent,
+    AddOrderDiscountComponent,
+    AddItemDiscountComponent
   ],
   imports: [
     CommonModule,

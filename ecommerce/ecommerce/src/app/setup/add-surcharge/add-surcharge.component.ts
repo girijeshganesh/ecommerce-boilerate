@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-add-surcharge',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AddSurchargeComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog, public dialogRef: MatDialogRef<AddSurchargeComponent>) { }
 
   ngOnInit(): void {
   }
-
+ close() {
+  this.dialogRef.close();
+ }
 }

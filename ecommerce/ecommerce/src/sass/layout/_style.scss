@@ -3784,5 +3784,16 @@ select.form-control {
     }
 .modal-btn-footer {
     justify-content: right;
+    border-top: 1px solid #d7d7d7;
+    margin: 10px 0;
+    padding: 10px 0;
 }
+.form-check-label {
+    margin-bottom: 10px;
+}
+}
+.modal-ht-custom {
+max-height: 400px;
+overflow-x: hidden;
+overflow-y:scroll;
 }
