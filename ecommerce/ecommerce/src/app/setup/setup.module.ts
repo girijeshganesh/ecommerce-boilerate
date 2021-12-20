@@ -18,7 +18,8 @@ import { PrintersComponent } from './printers/printers.component';
 import { DeliverySettingsComponent } from './delivery-settings/delivery-settings.component';
 import { SelfOrderingComponent } from './self-ordering/self-ordering.component';
 import { StaffComponent } from './staff/staff.component';
-
+import {MatDialogModule} from '@angular/material/dialog';
+import { AddSurchargeComponent } from './add-surcharge/add-surcharge.component';
 
 @NgModule({
   declarations: [
@@ -35,14 +36,16 @@ import { StaffComponent } from './staff/staff.component';
     PrintersComponent,
     DeliverySettingsComponent,
     SelfOrderingComponent,
-    StaffComponent
+    StaffComponent,
+    AddSurchargeComponent
   ],
   imports: [
     CommonModule,
     SetupRoutingModule,
     SharedModule,
     MatTabsModule,
-    SimpleModalModule
+    SimpleModalModule,
+    MatDialogModule
   ]
 })
 export class SetupModule { }
