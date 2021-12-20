@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
 import { Router } from '@angular/router';
+import { AddSalesTaxComponent } from '../add-sales-tax/add-sales-tax.component';
 
 @Component({
   selector: 'app-tax-rates',
@@ -8,11 +10,19 @@ import { Router } from '@angular/router';
 })
 export class TaxRatesComponent implements OnInit {
 
-  constructor(private router: Router) { }
+  constructor(private router: Router, public dialog: MatDialog) { }
 
   ngOnInit(): void {
   }
   back() {
     this.router.navigate(['setup/location/menuManagement'])
+  }
+  addTax(): void {
+    const dialogRef = this.dialog.open(AddSalesTaxComponent, {
+      width: '500px',
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+    });
   }
 }

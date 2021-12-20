@@ -23,6 +23,8 @@ import { AddSurchargeComponent } from './add-surcharge/add-surcharge.component';
 import { AddLocationComponent } from './add-location/add-location.component';
 import { AddOrderDiscountComponent } from './add-order-discount/add-order-discount.component';
 import { AddItemDiscountComponent } from './add-item-discount/add-item-discount.component';
+import { AddSalesTaxComponent } from './add-sales-tax/add-sales-tax.component';
+import { AddDiningComponent } from './add-dining/add-dining.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +45,9 @@ import { AddItemDiscountComponent } from './add-item-discount/add-item-discount.
     AddSurchargeComponent,
     AddLocationComponent,
     AddOrderDiscountComponent,
-    AddItemDiscountComponent
+    AddItemDiscountComponent,
+    AddSalesTaxComponent,
+    AddDiningComponent
   ],
   imports: [
     CommonModule,

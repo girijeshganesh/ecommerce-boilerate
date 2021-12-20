@@ -10,8 +10,9 @@
     <div class="body_wrapper container-fluid">
         <div class="row pt-4 px-2">
             <div class="col-12">
-                <div class="d-flex align-items-center head-tag cursor-pointer" (click)="back()">
-                    <h4> <i class="icon-arrow-left mr-1"></i>Dining</h4>
+                <div class="d-flex align-items-center head-tag cursor-pointer">
+                    <h4 class="flex-gr-1" (click)="back()"> <i class="icon-arrow-left mr-1"></i>Dining</h4>
+                    <button class="btn-setup-sucess" (click)="addDining()"><i class="icon-plus ml-1"></i>Add Dining</button>
                 </div>
             </div>
         </div>
@@ -31,10 +32,8 @@
                         <div class="col-12 col-sm-3"> <button class="btn-setup-danger">Remove Table<i
                                     class="icon-remove ml-1"></i></button></div>
                         <div class="col-12 col-sm-3">
-                            <button class="btn-setup-sucess mr-2">Add Table<i
-                                class="icon-plus ml-1"></i></button>
-                                <button class="btn-setup-sucess">Save Table<i
-                                    class="icon-print ml-1"></i></button>
+                            <button class="btn-setup-sucess mr-2">Add Table<i class="icon-plus ml-1"></i></button>
+                            <button class="btn-setup-sucess">Save Table<i class="icon-print ml-1"></i></button>
                         </div>
                     </div>
                 </mat-tab>
@@ -52,10 +51,8 @@
                         <div class="col-12 col-sm-3"> <button class="btn-setup-danger">Remove Table<i
                                     class="icon-remove ml-1"></i></button></div>
                         <div class="col-12 col-sm-3">
-                            <button class="btn-setup-sucess mr-2">Add Table<i
-                                class="icon-plus ml-1"></i></button>
-                                <button class="btn-setup-sucess">Save Table<i
-                                    class="icon-print ml-1"></i></button>
+                            <button class="btn-setup-sucess mr-2">Add Table<i class="icon-plus ml-1"></i></button>
+                            <button class="btn-setup-sucess">Save Table<i class="icon-print ml-1"></i></button>
                         </div>
                     </div>
                 </mat-tab>
