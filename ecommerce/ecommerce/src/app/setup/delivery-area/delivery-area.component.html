@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<body id="page_setup">
+    <!-- Header Start -->
+    <app-header></app-header>
+    <!-- Header End -->
+
+    <!-- Body Wrapper Start -->
+    <div class="body_wrapper container-fluid">
+        <div class="row pt-4 px-2">
+            <div class="col-12">
+                <div class="d-flex align-items-center head-tag cursor-pointer">
+                    <h4 class="flex-gr-1" (click)="back()"> <i class="icon-arrow-left mr-1"></i>Delivery Areas</h4>
+                    <button class="btn-setup-sucess mr-2" (click)="addArea()"><i class="icon-map-marker mr-1"></i>Add Deliery Area</button>
+                    <button class="btn-setup-sucess" (click)="uploadArea()"><i class="icon-plus mr-1"></i>Upload Delivery Areas</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

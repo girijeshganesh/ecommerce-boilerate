@@ -3800,3 +3800,9 @@ max-height: 400px;
 overflow-x: hidden;
 overflow-y:scroll;
 }
+.mat-slide-toggle.mat-checked .mat-slide-toggle-thumb {
+    background-color: #f35b55;
+}
+.mat-slide-toggle.mat-checked .mat-slide-toggle-bar {
+    background-color: rgba(243, 91, 85,.54);
+}

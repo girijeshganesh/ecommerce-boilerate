@@ -10,7 +10,7 @@ import { MenuManagementComponent } from './menu-management/menu-management.compo
 import { SurchargesDiscountsComponent } from './surcharges-discounts/surcharges-discounts.component';
 import { TaxRatesComponent } from './tax-rates/tax-rates.component';
 import { InnerMenuComponent } from './inner-menu/inner-menu.component';
-import {MatTabsModule} from '@angular/material/tabs';
+import { MatTabsModule } from '@angular/material/tabs';
 import { SimpleModalModule } from 'ngx-simple-modal';
 import { LocationStaffComponent } from './location-staff/location-staff.component';
 import { DiningComponent } from './dining/dining.component';
@@ -18,13 +18,18 @@ import { PrintersComponent } from './printers/printers.component';
 import { DeliverySettingsComponent } from './delivery-settings/delivery-settings.component';
 import { SelfOrderingComponent } from './self-ordering/self-ordering.component';
 import { StaffComponent } from './staff/staff.component';
-import {MatDialogModule} from '@angular/material/dialog';
+import { MatDialogModule } from '@angular/material/dialog';
 import { AddSurchargeComponent } from './add-surcharge/add-surcharge.component';
 import { AddLocationComponent } from './add-location/add-location.component';
 import { AddOrderDiscountComponent } from './add-order-discount/add-order-discount.component';
 import { AddItemDiscountComponent } from './add-item-discount/add-item-discount.component';
 import { AddSalesTaxComponent } from './add-sales-tax/add-sales-tax.component';
 import { AddDiningComponent } from './add-dining/add-dining.component';
+import { DeliveryAreaComponent } from './delivery-area/delivery-area.component';
+import { DeliveryManagerComponent } from './delivery-manager/delivery-manager.component';
+import { AddDeliveryAreaComponent } from './add-delivery-area/add-delivery-area.component';
+import { UploadDeliveryAreaComponent } from './upload-delivery-area/upload-delivery-area.component';
+import { MatSlideToggleModule} from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -47,7 +52,11 @@ import { AddDiningComponent } from './add-dining/add-dining.component';
     AddOrderDiscountComponent,
     AddItemDiscountComponent,
     AddSalesTaxComponent,
-    AddDiningComponent
+    AddDiningComponent,
+    DeliveryAreaComponent,
+    DeliveryManagerComponent,
+    AddDeliveryAreaComponent,
+    UploadDeliveryAreaComponent
   ],
   imports: [
     CommonModule,
@@ -56,6 +65,7 @@ import { AddDiningComponent } from './add-dining/add-dining.component';
     MatTabsModule,
     SimpleModalModule,
     MatDialogModule,
+    MatSlideToggleModule
   ]
 })
 export class SetupModule { }

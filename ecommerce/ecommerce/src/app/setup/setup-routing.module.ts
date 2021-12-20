@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DeliveryAreaComponent } from './delivery-area/delivery-area.component';
+import { DeliveryManagerComponent } from './delivery-manager/delivery-manager.component';
 import { DeliverySettingsComponent } from './delivery-settings/delivery-settings.component';
 import { DiningComponent } from './dining/dining.component';
 import { EditLocationComponent } from './edit-location/edit-location.component';
@@ -71,6 +73,14 @@ const routes: Routes = [
   {
     path: 'location/delivery',
     component:DeliverySettingsComponent
+  },
+  {
+    path: 'location/delivery/area',
+    component:DeliveryAreaComponent
+  },
+  {
+    path: 'location/delivery/manager',
+    component:DeliveryManagerComponent
   },
 ];
 

@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+
+<body id="page_setup">
+    <!-- Header Start -->
+    <app-header></app-header>
+    <!-- Header End -->
+
+    <!-- Body Wrapper Start -->
+    <div class="body_wrapper container-fluid">
+        <div class="row pt-4 px-2">
+            <div class="col-12">
+                <div class="d-flex align-items-center head-tag cursor-pointer">
+                    <h4 class="flex-gr-1" (click)="back()"> <i class="icon-arrow-left mr-1"></i>Delivery Manager</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="px-2 mb-2">
+            <mat-slide-toggle>Delivery Manager</mat-slide-toggle>
+        </div>
+        <div class="px-2 mb-2">
+            <mat-slide-toggle>Credit Card Payment Option in Delivery Assistant</mat-slide-toggle>
+        </div>
+        <div class="px-2 mb-2">
+            <mat-slide-toggle>Enable SSL for Auto-Refresh</mat-slide-toggle>
+        </div>
+    </div>
+
+</body>
+
+</html>

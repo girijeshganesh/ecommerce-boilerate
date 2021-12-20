@@ -15,4 +15,10 @@ export class DeliverySettingsComponent implements OnInit {
   location() {
     this.router.navigate(['setup/editLocation'])
   }
+  deliveryArea() {
+    this.router.navigate(['setup/location/delivery/area'])
+  }
+  deliveryManager() {
+    this.router.navigate(['setup/location/delivery/manager'])
+  }
 }
