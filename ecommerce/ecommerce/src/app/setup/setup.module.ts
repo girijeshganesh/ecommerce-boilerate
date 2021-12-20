@@ -20,6 +20,7 @@ import { SelfOrderingComponent } from './self-ordering/self-ordering.component';
 import { StaffComponent } from './staff/staff.component';
 import {MatDialogModule} from '@angular/material/dialog';
 import { AddSurchargeComponent } from './add-surcharge/add-surcharge.component';
+import { AddLocationComponent } from './add-location/add-location.component';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,8 @@ import { AddSurchargeComponent } from './add-surcharge/add-surcharge.component';
     DeliverySettingsComponent,
     SelfOrderingComponent,
     StaffComponent,
-    AddSurchargeComponent
+    AddSurchargeComponent,
+    AddLocationComponent
   ],
   imports: [
     CommonModule,
@@ -45,7 +47,7 @@ import { AddSurchargeComponent } from './add-surcharge/add-surcharge.component';
     SharedModule,
     MatTabsModule,
     SimpleModalModule,
-    MatDialogModule
+    MatDialogModule,
   ]
 })
 export class SetupModule { }

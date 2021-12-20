@@ -3777,3 +3777,12 @@ select.form-control {
         display: block;
     }
 }
+.modal-wrapper {
+    h2 {
+        border-bottom: 1px solid #d7d7d7;
+        color: #4a4a4a;
+    }
+.modal-btn-footer {
+    justify-content: right;
+}
+}

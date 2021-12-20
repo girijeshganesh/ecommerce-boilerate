@@ -1,0 +1,27 @@
+<div class="modal-wrapper">
+    <h2>Add New Location</h2>
+    <input type="text" class="form-control" placeholder="Address1" />
+    <input type="text" class="form-control" placeholder="Address2" />
+    <select class="form-control w-100" aria-label="City">
+        <option selected>City</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+    <select class="form-control w-100" aria-label="State">
+        <option selected>State</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+    <select class="form-control w-100" aria-label="Country">
+        <option selected>Country</option>
+        <option value="1">One</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+    </select>
+    <div class="d-flex modal-btn-footer">
+        <button class="btn-setup-sucess mr-2">Submit</button>
+        <button class="btn-setup-danger" (click)="close()">Cancel</button>
+    </div>
+</div>
