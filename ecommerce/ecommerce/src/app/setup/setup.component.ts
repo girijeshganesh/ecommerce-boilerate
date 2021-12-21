@@ -18,4 +18,7 @@ export class SetupComponent implements OnInit {
   staff() {
     this.router.navigate(['setup/staff'])
   }
+  menuSetup() {
+    this.router.navigate(['setup/menuSetup'])
+  }
 }

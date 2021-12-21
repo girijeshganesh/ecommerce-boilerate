@@ -30,6 +30,7 @@ import { DeliveryManagerComponent } from './delivery-manager/delivery-manager.co
 import { AddDeliveryAreaComponent } from './add-delivery-area/add-delivery-area.component';
 import { UploadDeliveryAreaComponent } from './upload-delivery-area/upload-delivery-area.component';
 import { MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { MenuSetupComponent } from './menu-setup/menu-setup.component';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,8 @@ import { MatSlideToggleModule} from '@angular/material/slide-toggle';
     DeliveryAreaComponent,
     DeliveryManagerComponent,
     AddDeliveryAreaComponent,
-    UploadDeliveryAreaComponent
+    UploadDeliveryAreaComponent,
+    MenuSetupComponent
   ],
   imports: [
     CommonModule,

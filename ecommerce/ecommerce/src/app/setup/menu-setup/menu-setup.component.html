@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<body id="page_setup">
+    <!-- Header Start -->
+    <app-header></app-header>
+    <!-- Header End -->
+
+    <!-- Body Wrapper Start -->
+    <div class="body_wrapper container-fluid">
+        <div class="row pt-4 px-2">
+            <div class="col-12">
+                <div class="d-flex align-items-center head-tag">
+                    <h2>Menu Setup</h2>
+                    <a href=""><i class="icon-refresh mr-1"></i>Refresh POS Menu</a>
+                    <button class="btn-setup-sucess mx-2"><i class="icon-upload mr-1"></i>Upload Menu</button>
+                    <button class="btn-setup-sucess bg-grey mr-2"><i class="icon-plus mr-1"></i>Add Menu category</button>
+                    <button class="btn-setup-sucess"><i class="icon-upload mr-1"></i>Add New Menu Item</button>
+                </div>
+                </div>
+        </div>
+        <div class="px-2">
+            <mat-tab-group>
+                <mat-tab label="Menu Items">
+               <div class="row m-0 pt-4">
+                <div class="col-12 col-sm-9">
+                    <div class="row">
+                     <div class="col-12 col-sm-2">
+                        <select class="form-control w-100">
+                            <option selected>Filter</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                     </div>
+                     <div class="col-12 col-sm-10">
+                        <input type="text" class="form-control" placeholder="Search Menu Item" />
+                     </div>
+                    </div>
+                    <table class="table custom-cntr-scn">
+                        <thead>
+                            <tr>
+                                <th scope="col">Product Information</th>
+                                <th scope="col">product Description</th>
+                                <th scope="col">Price(QAR)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="w-25">  
+                                    <div class="img-cntr">
+                                        <img src="assets/images/1.png" class="crop_img" alt="">
+                                    </div>
+                                    </td>
+                                <td>
+                                    <div>
+                                        <h4>Bottled Water</h4>
+                                        <p>Click EDIT to add description.</p>
+                                    </div>
+                                </td>
+                                <td>  <span class="mr-2">3.00</span><button class="btn-setup-sucess mr-2"><i class="icon-pencil mr-1"></i>EDIT</button></td>
+                            </tr>
+                            <tr>
+                                <td class="w-25"> 
+                                    <div class="img-cntr">
+                                        <img src="assets/images/1.png" class="crop_img" alt="">
+                                    </div>
+                                    </td>
+                                <td>
+                                    <div>
+                                        <h4>Bottled Water</h4>
+                                        <p>Click EDIT to add description.</p>
+                                    </div>
+                                </td>
+                                <td>  <span class="mr-2">3.00</span><button class="btn-setup-sucess mr-2"><i class="icon-pencil mr-1"></i>EDIT</button></td>
+                            </tr>
+                            <tr>
+                                <td class="w-25"> 
+                                    <div class="img-cntr">
+                                        <img src="assets/images/1.png" class="crop_img" alt="">
+                                    </div>
+                                    </td>
+                                <td>
+                                    <div>
+                                        <h4>Bottled Water</h4>
+                                        <p>Click EDIT to add description.</p>
+                                    </div>
+                                </td>
+                                <td>  <span class="mr-2">3.00</span><button class="btn-setup-sucess mr-2"><i class="icon-pencil mr-1"></i>EDIT</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <select class="form-control w-100">
+                        <option selected>Menu categories</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                    </select>
+                    <button class="btn-setup-sucess bg-grey"><i class="icon-plus mr-1"></i>Add Menu category</button>
+                </div>
+               </div>
+                </mat-tab>
+                <mat-tab label="Modifiers"> 
+
+                </mat-tab>
+            </mat-tab-group>
+        </div>
+    </div>
+</body>
+
+</html>

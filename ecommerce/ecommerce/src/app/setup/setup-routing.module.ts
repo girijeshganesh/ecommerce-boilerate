@@ -10,6 +10,7 @@ import { InnerMenuComponent } from './inner-menu/inner-menu.component';
 import { LocationStaffComponent } from './location-staff/location-staff.component';
 import { LocationComponent } from './location/location.component';
 import { MenuManagementComponent } from './menu-management/menu-management.component';
+import { MenuSetupComponent } from './menu-setup/menu-setup.component';
 import { PrintersComponent } from './printers/printers.component';
 import { SelfOrderingComponent } from './self-ordering/self-ordering.component';
 import { SetupComponent } from './setup.component';
@@ -82,6 +83,10 @@ const routes: Routes = [
     path: 'location/delivery/manager',
     component:DeliveryManagerComponent
   },
+  {
+    path: 'menuSetup',
+    component:MenuSetupComponent
+  }
 ];
 
 @NgModule({
