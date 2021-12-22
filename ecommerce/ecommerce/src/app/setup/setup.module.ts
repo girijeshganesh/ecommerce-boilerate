@@ -31,6 +31,12 @@ import { AddDeliveryAreaComponent } from './add-delivery-area/add-delivery-area.
 import { UploadDeliveryAreaComponent } from './upload-delivery-area/upload-delivery-area.component';
 import { MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { MenuSetupComponent } from './menu-setup/menu-setup.component';
+import { UploadMenuComponent } from './upload-menu/upload-menu.component';
+import { AddMenuCategoryComponent } from './add-menu-category/add-menu-category.component';
+import { AddMenuItemComponent } from './add-menu-item/add-menu-item.component';
+import { ManageMenuComponent } from './manage-menu/manage-menu.component';
+import { AddGroupComponent } from './add-group/add-group.component';
+import { EditMenuItemComponent } from './edit-menu-item/edit-menu-item.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +64,13 @@ import { MenuSetupComponent } from './menu-setup/menu-setup.component';
     DeliveryManagerComponent,
     AddDeliveryAreaComponent,
     UploadDeliveryAreaComponent,
-    MenuSetupComponent
+    MenuSetupComponent,
+    UploadMenuComponent,
+    AddMenuCategoryComponent,
+    AddMenuItemComponent,
+    ManageMenuComponent,
+    AddGroupComponent,
+    EditMenuItemComponent
   ],
   imports: [
     CommonModule,

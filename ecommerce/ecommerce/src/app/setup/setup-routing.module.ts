@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { AddMenuItemComponent } from './add-menu-item/add-menu-item.component';
 import { DeliveryAreaComponent } from './delivery-area/delivery-area.component';
 import { DeliveryManagerComponent } from './delivery-manager/delivery-manager.component';
 import { DeliverySettingsComponent } from './delivery-settings/delivery-settings.component';
 import { DiningComponent } from './dining/dining.component';
 import { EditLocationComponent } from './edit-location/edit-location.component';
+import { EditMenuItemComponent } from './edit-menu-item/edit-menu-item.component';
 import { GeneralDetailsComponent } from './general-details/general-details.component';
 import { InnerMenuComponent } from './inner-menu/inner-menu.component';
 import { LocationStaffComponent } from './location-staff/location-staff.component';
@@ -86,6 +88,14 @@ const routes: Routes = [
   {
     path: 'menuSetup',
     component:MenuSetupComponent
+  },
+  {
+    path: 'menuSetup/addNewMenuItem',
+    component:AddMenuItemComponent
+  },
+  {
+    path: 'menuSetup/editmenuItem',
+    component:EditMenuItemComponent
   }
 ];
 

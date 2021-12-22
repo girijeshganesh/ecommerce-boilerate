@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+
+<body id="page_setup">
+    <!-- Header Start -->
+    <app-header></app-header>
+    <!-- Header End -->
+
+    <!-- Body Wrapper Start -->
+    <div class="body_wrapper container-fluid add-menu-wrp">
+        <div class="row pt-4 px-2">
+            <div class="col-12">
+                <div class="d-flex align-items-center head-tag cursor-pointer" (click)="back()">
+                    <h4> <i class="icon-arrow-left mr-1"></i> Edit Menu Item</h4>
+                </div>
+                </div>
+        </div>
+        <div class="px-2">
+            <h2>Item Details</h2>
+            <p>Item Type</p>
+            <div class="row mb-2">
+              <div class="col-12 col-sm-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                        Regular Item
+                    </label>
+                  </div>
+              </div>
+              <div class="col-12 col-sm-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault3">
+                    <label class="form-check-label" for="flexRadioDefault3">
+                        Grouped Item
+                    </label>
+                  </div>
+              </div>
+              <div class="col-12 col-sm-3">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault4">
+                    <label class="form-check-label" for="flexRadioDefault4">
+                        Combo Item
+                    </label>
+                  </div>
+              </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-3">
+                    <label>Name</label>
+                    <input type="text" class="form-control" placeholder="Name" />
+                </div>
+                <div class="col-12 col-sm-3">
+                    <label>Barcode</label>
+                    <input type="text" class="form-control" placeholder="Barcode" />
+                </div>
+                <div class="col-12 col-sm-3">
+                    <label>Barcode</label>
+                    <input type="text" class="form-control" placeholder="Barcode" />
+                </div>
+                <div class="col-12 col-sm-3">
+                    <label>Default Price</label>
+                    <input type="text" class="form-control" placeholder="Default Price" />
+                </div>
+                <div class="col-12 col-sm-3">
+                    <label>Description</label>
+                    <input type="text" class="form-control" placeholder="Description" />
+                </div>
+                <div class="col-12 col-sm-3">
+                    <label>Item Category</label>
+                    <select class="form-control w-100">
+                        <option selected>Select Category</option>
+                        <option value="1">One</option>
+                        <option value="2">Two</option>
+                        <option value="3">Three</option>
+                      </select>
+                </div>
+                <div class="col-12 col-sm-3">
+                    <label>Upload Items</label>
+                    <input type="file" class="form-control" placeholder="Upload Items" />
+                </div>
+                <div class="col-12 col-sm-3">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                        <label class="form-check-label" for="flexCheckChecked">
+                            Change all locations
+                        </label>
+                      </div>
+                </div>
+                </div>
+                <p>Item Availability</p>
+                <table class="col-6 table">
+                    <thead>
+                      <tr>
+                        <th scope="col">Locations</th>
+                        <th scope="col">POS</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                    <td>Kakkanad</td>
+                    <td>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked1" checked>
+                            <label class="form-check-label" for="flexCheckChecked1">
+                            </label>
+                          </div>
+                    </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>Food Symbols</p>
+                  <div class="row">
+                    <div class="col-12 col-sm-4 mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked3">
+                            <label class="form-check-label" for="flexCheckChecked3">
+                                Vegetarian
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked4">
+                            <label class="form-check-label" for="flexCheckChecked4">
+                                Spicy
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked5">
+                            <label class="form-check-label" for="flexCheckChecked5">
+                                Non Vegetarian
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked6">
+                            <label class="form-check-label" for="flexCheckChecked6">
+                                May contain egg
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-4 mb-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked7">
+                            <label class="form-check-label" for="flexCheckChecked7">
+                                May contain fish
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <p>Item Modifiers</p>
+                <div>
+                    <button class="btn-setup-sucess" (click)="addGroup()">Add Group</button>
+                </div>
+                <p>Tags</p>
+                <input type="text" class="form-control col-12 col-sm-6" placeholder="Type Tag and hit enter to Add" />
+                <div class="d-flex mb-2 btn-ft-wrp">
+                    <button class="btn-setup-danger mr-2">Cancel</button>
+                    <button class="btn-setup-sucess">Submit</button>
+                </div>
+        </div>
+    </div>
+</body>
+
+</html>
+
